@@ -2,10 +2,9 @@
   display: flex;
   flex-direction: row;
   max-width: 73rem;
-  // max-height: 28rem;
   background-color: white;
   border-radius: 2rem;
-
+  box-shadow: -1px 4px 5px var(--color-gray-blue);
   @media screen and (max-width: 772px) {
     max-width: 32.7rem;
     flex-direction: column;

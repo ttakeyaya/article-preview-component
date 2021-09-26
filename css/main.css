@@ -45,6 +45,7 @@ body {
   max-width: 73rem;
   background-color: white;
   border-radius: 2rem;
+  box-shadow: -1px 4px 5px var(--color-gray-blue);
 }
 @media screen and (max-width: 772px) {
   .preview {
