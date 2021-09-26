@@ -1,42 +1,18 @@
-/** 
--Import Google Fonts and Define font variables
--Define color varibalbes
--Reset CSS properties(margin, padding)
--set 1rem to be 10px
-*/
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
-:root {
-  --color-dark-gray-blue: hsl(217, 19%, 35%);
-  --color-dark-blue: hsl(214, 17%, 51%);
-  --color-gray-blue: hsl(212, 23%, 69%);
-  --color-light-gray-blue: hsl(210, 46%, 95%);
-}
+/* Error: expected "{".
+ *     ,
+ * 139 | >>>>>>> js
+ *     |           ^
+ *     '
+ *   sass\_component.scss 139:11  @import
+ *   sass\main.scss 2:9           root stylesheet */
 
-* {
-  padding: 0;
-  margin: 0;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a     \2577 \a 139 \2502  >>>>>>> js\d\a     \2502            ^\a     \2575 \a   sass\\_component.scss 139:11  @import\a   sass\\main.scss 2:9           root stylesheet';
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Manrope", sans-serif;
-  font-size: 1.3rem;
-  background-color: var(--color-light-gray-blue);
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/*# sourceMappingURL=main.css.map */
