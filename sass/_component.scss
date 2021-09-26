@@ -5,10 +5,11 @@
   // max-height: 28rem;
   background-color: white;
   border-radius: 2rem;
-  // overflow: hidden;
+
   @media screen and (max-width: 772px) {
     max-width: 32.7rem;
     flex-direction: column;
+    overflow: hidden;
   }
   .img-container {
     min-width: 28.5rem;
@@ -24,9 +25,11 @@
   &__body {
     margin: 3.2rem 4rem 0 4rem;
     @media screen and (max-width: 772px) {
-      margin: 3.6rem 3.2rem 0rem 3.2rem;
+      margin: 3.6rem 0rem 0rem 0rem;
     }
     &__title {
+      margin-right: 3.2rem;
+      margin-left: 3.2rem;
       margin-bottom: 1.2rem;
       font-size: 2rem;
       line-height: 2.8rem;
@@ -39,6 +42,8 @@
       }
     }
     &__text {
+      margin-right: 3.2rem;
+      margin-left: 3.2rem;
       margin-bottom: 2rem;
       line-height: 2rem;
       letter-spacing: 0.12px;
@@ -49,19 +54,15 @@
     }
   }
   &__profile {
-    // margin-right: 3.2rem;
-    // margin-left: 3.2rem;
+    padding: 2.2rem 2.2rem 2.2rem 3.2rem;
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3.2rem;
-    border: 1px solid red;
+    @media screen and(max-width:772px) {
+    }
     &__container {
       display: flex;
-      opacity: 1;
-      // display: block;
       @media screen and (max-width: 772px) {
-        display: none;
       }
       .profile-contaier {
         display: flex;
@@ -97,8 +98,8 @@
 // social media container
 .share_container {
   position: absolute;
-  top: -130%;
-  right: -25%;
+  top: -35%;
+  right: -20%;
   display: flex;
   width: 24.8rem;
   flex-direction: row;
@@ -120,14 +121,14 @@
     border-bottom: 15px solid transparent;
     border-left: 15px solid transparent;
   }
-  opacity: 0;
+  display: none;
   @media screen and (max-width: 772px) {
-    // display: none;
-    opacity: 1;
+    display: none;
+    // opacity: 1;
     position: relative;
     top: 0%;
     right: 0%;
-    // border: 1px solid red;
+    border-radius: 0%;
     width: 100%;
     &::after {
       display: none;
